@@ -35,7 +35,7 @@ function counter1(){
 		}	
 
 
-		setInterval(start4, 1);
+		setInterval(start4, 100);
 		var d = 0;
 			function start4(){
 				if(d == 7){		
