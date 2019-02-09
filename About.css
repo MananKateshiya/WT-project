@@ -92,6 +92,7 @@ body{
 
 .parallex{  
   position: absolute;
+  margin-bottom: 100px;
   height: 500px;
   width: 100%;
   background-image: url("Images/About/swimming_pool.jpg");
@@ -105,8 +106,78 @@ body{
   color: white;
   font-size: 30px;
   position: absolute;
-  text-shadow: 5px 5px 3px black;
+  text-shadow: 0px 7px 15px black;
 }
 .parallex img{
   position: absolute;
+}
+
+.specs{
+  width: 100%;
+  height: 600px;
+  margin-top: 600px;
+  position: absolute;
+}
+
+.spechead1{
+  position: absolute;
+  margin-left: 47%;
+  font-size: 25px;
+  color: #b0914f;
+  font-weight: 600;
+  font-family: 'cinzel decorative';
+}
+.spechead2{
+   position: absolute;
+   margin-top: 40px;
+   margin-left: 32%;
+   font-size: 50px;
+   color: rgb(0, 0, 90, 0.8);
+   font-weight: bolder;
+   font-family: 'cinzel decorative'; 
+}
+
+.specheads{
+    color: rgb(0, 0, 90, 0.8);
+    font-size: 20px;
+    position: absolute;
+}
+.specdata{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #7b7b7b;
+    text-align: justify;
+    width: 300px;
+}
+
+.specimg1{
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 100px;
+}
+.specimg2{
+  position: absolute;
+  margin-left: 730px;
+  margin-top: 190px;
+}
+.specimg3{
+  position: absolute;
+  margin-left: 1400px;
+  margin-top: 190px;
+}
+.specimg4{
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 100px;
+}
+.specimg5{
+  position: absolute;
+  margin-top: 390px;
+  margin-left: 730px;
+}
+.specimg6{
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 1405px;
 }
