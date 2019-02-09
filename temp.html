@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<style type="text/css">
+html * {
+  box-sizing: border-box;
+}
+.crop {
+  background-image: url(checkavai.png);
+  width: 200px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: opacity 0.9s ease;
+}
+.shape {
+  width: 200px;
+  height: 50px;
+  color: black;
+}
+.details {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border : 2px solid white;
+  padding: 5px 10px;
+  transform: scale(0.01);
+  color: white;
+  visibility: hidden;
+}
+.crop:hover > .details {
+   transform: rotate(360deg) scale(0.9);
+  transition: 0.5s;
+  bottom: 0;
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+  <div class="shape">
+  <div class="crop">
+    <div class="details">
+    </div>
+  </div>
+</div>
+</body>
+</html>

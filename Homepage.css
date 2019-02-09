@@ -1,0 +1,595 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+ }
+ header{
+  height: 150px;
+  margin-top: 0px;
+  width: 100%;
+  background: white;
+  top : 0px;
+  position: sticky;
+  z-index: 1;
+ }
+header img{
+  height: 90px;
+  width: 270px;
+	margin-left: 280px;
+  margin-top: 20px;
+	position: absolute;
+}
+#menu{
+	position: absolute;
+	height: 133px;
+	width: 730px;
+	margin-top: 0px;
+	margin-left: 700px;
+}
+.headlinks{
+  margin-left: 15px;
+}
+li{
+	list-style-type: none;
+    display: inline-block;
+    line-height: 70px;
+    padding: 0px 5px;
+    margin-top: 20px;
+}
+li a{
+	font-family: "Cinzel Decorative";
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: right;
+    color: #7b7b7b;
+    text-decoration: none;
+    padding: 40px 10px;
+}
+nav a:hover {
+	background: transparent;
+    color: #b0914f;
+    border-color: #b0914f;
+}
+body {
+  font-family: Verdana, sans-serif;
+   margin:0
+ }
+ .HPmain{
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    position: static;
+    z-index: -1;
+    animation-name: HP;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: 10s;
+ }
+ @keyframes HP {
+  0%   { background-image: url(Images/banner5.jpg); transform: scale(1.02); }
+  11%   {transform: scale(1.1); }
+  22%   {transform: scale(1.02) ; }
+  33%   { background-image: url(Images/banner6.jpg); transform: scale(1.02); }
+  44%   { transform: scale(1.1); }
+  55%   { transform: scale(1.02); }
+  66%   { background-image: url(Images/banner1.jpg); transform: scale(1.02); }
+  77%   { transform: scale(1.1); }
+  89%   { transform: scale(1.02); }
+  100%   { background-image: url(Images/banner5.jpg); transform: scale(1.02); }
+
+}
+.hptop{
+  border-bottom: 0.7px solid #f0f0f0;
+  padding-left: 40px;
+  height: 70px;
+  background: white;
+  width: 100%;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #7b7b7b;
+
+}
+.btbooknow{
+  margin-left: 800px;
+  font-family: sans-serif;
+  background: #b0914f;
+  font-size: 16px;
+  font-weight: bold;
+  height: 70px;
+  width: 160px;
+  border : none;
+  color: white;
+  transition: 0.9s;
+}
+.btbooknow:hover{
+  background: #333333;
+}
+.hpbook{
+  background-image: url(Images/bookbg.jpg);
+  position: relative;
+  height: 150px;
+  width: 100%;
+  padding-left: 380px;
+  padding-top: 40px;
+}
+.hpbook div{
+  background: white;
+  height: 110px;
+  width: 180px;
+  text-align: left;
+  float: left;
+  padding: 10px 20px 0px 20px;
+}
+.hpbook div p{
+  font-family: "Cinzel Decorative";
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: #7b7b7b;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 13px;
+}
+.hpbook div hr{
+  color: 1px solid #e0e0e0;
+}
+.btcheck{
+    border-radius: 0px;
+    font-family: serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    background: url(Images/checkavai.png);
+    height: 110px;
+    width: 195px;
+    transition: 0.7s;
+}
+.btcheck:hover{
+  color: black;
+}
+.Date{
+  height: 28px;
+  width: 170px;
+  font-size: 19px;
+  font-weight: bold;
+  padding-right: 5px;
+  font-family: "Cinzel Decorative";
+  border : none;
+   outline: none;
+}
+.Date:hover{
+  outline: none;
+  color: #b0914f;
+}
+.hpbooksel:hover{
+ outline: none;
+  color: #b0914f;
+}
+.hpbooksel{
+  width: 180px;
+  height: 30px;
+  width: 170px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Cinzel Decorative;
+  border : none;
+  outline: none;
+}
+option{
+  color: black;
+
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url(https://fonts.gstatic.com/s/cinzeldecorative/v6/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
+
+}
+
+.content{
+  width: 1894px;
+  height: 564px;
+}
+.h{
+  font-family: Cinzel Decorative;
+  color: #b0914f;
+  font-weight: bold;
+  line-height: 2.14;
+  letter-spacing: 2.8px;
+  margin-top: 100px;
+}
+.h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #333333;
+}
+#par{
+  font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 2.14;
+    text-align: center;
+    color: #7b7b7b;
+}
+
+/*------------------------------------------------------------*/
+
+.container button{
+  display: inline-block;
+  position: relative;
+  float: left;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 650px;
+  width: 25%;
+  transition: 0.9s;
+}
+.container button span{
+  font-family: "Cinzel Decorative";
+  display: block;
+  padding: 25px 80px;
+}
+.container button::before, .container button::after{
+  content:"";
+  width: 0;
+  height: 6px;
+  position: absolute;
+  transition: all 0.4s linear;
+  background: #fff;
+}
+
+.container button span::before, .container button span::after{
+  content:"";
+  width:6px;
+  height:0;
+  position: absolute;
+  transition: all 0.4s linear;
+  background: #fff;
+}
+.container button:hover::before, .container button:hover::after{
+  width: 90%;
+}
+.container button:hover span::before, .container button:hover span::after{
+  height: 90%;
+}
+/*--------*/
+.container .hov1 button:hover{
+  transition: 0.5s;
+  background-image: url(Images/h1hov.jpg);
+}
+.container .hov1 button:not(:hover){
+  transition: 0.5s;
+  background-image: url(Images/h1.jpg);
+}
+.container .hov2 button:hover{
+  transition: 0.5s;
+  background-image: url(Images/h2hov.jpg);
+}
+.container .hov2 button:not(:hover){
+  transition: 0.5s;
+  background-image: url(Images/h2.jpg);
+}
+.container .hov3 button:hover{
+  transition: 0.5s;
+  background-image: url(Images/h3hov.jpg);
+}
+.container .hov3 button:not(:hover){
+  transition: 0.5s;
+  background-image: url(Images/h3.jpg);
+}
+.container .hov4 button:hover{
+  transition: 0.5s;
+  background-image: url(Images/h4hov.jpg);
+}
+.container .hov4 button:not(:hover){
+  transition: 0.5s;
+  background-image: url(Images/h4.jpg);
+}
+/*----------*/
+.btn-6::before{
+  left: 50%;
+  top: 5%;
+  transition-duration: 0.4s;
+}
+.btn-6::after{
+  left: 50%;
+  bottom: 5%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::before{
+  left: 5%;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::after{
+  right: 5%;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6:hover::before, .btn-6:hover::after{
+  left: 5%;
+}
+.btn-6:hover span::before, .btn-6:hover span::after{
+  top: 5%;
+}
+
+/*--------------------------------------Footer---------------------------------------*/
+
+.footer{
+  width: 100%;
+  height: 600px;
+  background-color: rgb(51, 51, 51);
+}
+
+.footlogo{
+  width: 200px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 200px;
+  position: absolute;
+ }
+
+.footheading{
+  position: absolute;
+  margin-left: 580px;
+  margin-top: 105px;
+
+}
+
+.footheading span{
+  margin-left: 200px;
+  font-family: Cinzel Decorative;
+  font-weight: 600;
+  color: #b0914f;
+  font-size: 22px;
+
+}
+
+.contact{
+  position: absolute;
+  text-decoration: none;
+  color: #aeaeae;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 250px;
+  margin-top: 200px;
+
+}
+
+.icons{
+  position: absolute;
+  height: auto;
+  width: 25px;
+  margin-top: 220px;
+  margin-left: 200px;
+}
+
+.icons2{
+  position: absolute;
+  height: auto;
+  width: 25px;
+  margin-top: 255px;
+  margin-left: 200px;
+}
+.icons3{
+  position: absolute;
+  height: auto;
+  width: 25px;
+  margin-top: 300px;
+  margin-left: 200px;
+}
+
+.footlinks1 {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 780px;
+}
+
+.footlinks1 a{
+  text-decoration: none;
+  color: #aeaeae;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+
+}
+.footlinks1 a:hover{
+  color: #b0914f;
+}
+
+
+.footlinks2 {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 1100px;
+}
+
+.footlinks2 a{
+  text-decoration: none;
+  color: #aeaeae;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+
+
+}
+.footlinks2 a:hover{
+  color: #b0914f;
+}
+
+.fb{
+
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 200px;
+  width: 50px;
+  height: auto;
+  transition: 0.5s;
+  border-radius: 50%;
+  background-color: white;
+}
+.fb:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 0.5s;
+  background-color: #b0914f;
+}
+.insta{
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 270px;
+  width: 50px;
+  height: auto;
+  transition: 0.5s;
+  background-color: white;
+  border-radius: 50%;
+}
+.insta:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 0.5s;
+  background-color: #b0914f;
+}
+
+.twitter{
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 340px;
+  width: 50px;
+  height: auto;
+  transition: 0.5s;
+  border-radius: 50%;
+  background-color: white;
+}
+.twitter:hover{
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: 0.5s;
+  background-color: #b0914f;
+}
+
+#in-ho{
+
+}
+
+.signup .mail{
+  position: absolute;
+  width: 380px;
+  height: 36px;
+  margin-top: 180px;
+  margin-left: 1410px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+
+.signup .button{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border:none;
+  background: url("Images/sendicon.png");
+  margin-top: 195px;
+  margin-left: 1775px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+.signup .button:hover{
+    cursor: pointer;
+}
+
+.trip img{
+  position: absolute;
+  width: 150px;
+  height: auto;
+  margin-top: 300px;
+  margin-left: 1400px;
+}
+
+.copy p{
+  position: absolute;
+   color: rgba(202,202,202,0.3);
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 550px;
+  margin-left: 200px;
+}
+
+.lastlinks{
+  position: absolute;
+  color: rgba(202,202,202,0.3);
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 550px;
+  margin-left: 1200px;
+}
+.lastlinks a{
+  text-decoration: none;
+  margin-left: 30px;
+  color: rgba(202,202,202,0.3);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+
+}
+.lastlinks a:hover{
+  color: #b0914f;
+}
+
+
+#Btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#b0914f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  height: 50px;
+  width: 50px;
+}
+
+#Btn:hover {
+  background-color: #aeaeae;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-clear-button{
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+.hpbooksel::-webkit-calendar-picker-indicator {
+    color: #b0914f;
+}
