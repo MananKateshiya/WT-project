@@ -1,0 +1,171 @@
+/*--------------------------------------Rooms---------------------------------------*/
+
+#roomscheck{
+  box-shadow: 0px 3px 20px grey;
+  font-weight: 1000;
+  color: #b0914f;
+  top: 350px;
+  left: 1500px;
+  position: fixed;
+  background-image: url(Images/bookbg2.jpg);
+  width: 9%;
+  padding : 40px 40px 40px 40px;
+  display: inline;
+  font-family: Cinzel Decorative;
+}
+#roomscheck p{
+  text-shadow: 2px 2px white;
+}
+.mainimg{
+  height: 400px;
+  width: 100%;
+}
+.mainimg h1{
+  padding-top: 180px;
+  font-family: Cinzel Decorative;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  letter-spacing: 20px;
+}
+.roomsdiv{
+  padding-top: 20px;
+  background-color: white;
+  width: 100%;
+  margin-left: 300px;
+  padding-left: 0px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.roomtype{
+  width: 700px;
+  height: 309px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 2px #b0914f;
+}
+.roomtype:hover{
+  transition: 1s;
+  box-shadow: 0px 1px 1px 4px orange;
+  transform: scale(1.01);
+  border-radius: 1px;
+}
+.roomtype:not(:hover){
+  transition: 1s;
+  box-shadow: 0px 1px 1px 2px #b0914f;
+  transform: scale(1.0);
+}
+.roomsdiv h1{
+  font-family: Cinzel Decorative;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 12px;
+  position: relative;
+}
+.roomsdiv span{
+  top: 1260px;
+  left: 1060px;
+  color: #b59292;
+  font-size: 19px;
+}
+.roomsdiv h3{
+  font-family: verdana;
+  font-size: 22px;
+  color: #b0914f;
+}
+
+
+
+/*--------------------------------------Reservation---------------------------------------*/
+
+.resmain{
+  background-color: #b0914f;
+  color: white;
+  font-family: Cinzel Decorative;
+  height: 820px;
+  width: 40%;
+  margin-left: 27%;
+  font-size: 25px;
+  padding: 30px;
+  box-shadow: 0px 3px 28px #b0914f;
+}
+.resmain form{
+  padding-left: 80px;
+}
+.resmain form tr td {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.resmain form tr td span:hover{
+  transform: 1s;
+  color: black;
+}
+.resmain form tr td input[type="date"]:hover{
+  transition: 0.2s;
+  border-left: 5px solid #b0914f;
+  box-shadow: 0px 1px 3px black;
+}
+.resmain form tr td input[type="text"]:hover{
+  transition: 0.2s;
+  border-left: 5px solid #b0914f;
+  box-shadow: 0px 1px 3px black;
+}
+.resmain form tr td select:hover{
+  transition: 0.2s;
+  border-left: 5px solid #b0914f;
+  box-shadow: 0px 1px 3px black;
+}
+.resmain center button{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+   letter-spacing: 10px;
+   text-decoration: none;
+   background: transparent;
+   border-left: none;
+   border-right: none;
+}
+.resmain center button:hover{
+  transition: 0.2s;
+  color: white;
+  font-weight: bold;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: scale(1.1);
+}
+.resmain h3:hover{
+  color: black;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+.steps{
+  float: left;
+  width: 20%;
+  background: #b0914f;
+  height: 45px;
+  font-family: Rogo Italic;
+  font-weight: bold;
+  font-size: 25px;
+  border-left: 2px solid white;
+  text-align: center;
+  padding-top: 13px;
+  letter-spacing: 2.5px;
+  color: white;
+}
+.rescheck{
+  box-shadow: 0px 3px 20px grey;
+  font-weight: 1000;
+  color: #b0914f;
+  top: 350px;
+  left: 1500px;
+  position: fixed;
+  background-image: url(Images/bookbg2.jpg);
+  width: 9%;
+  padding : 40px 40px 40px 40px;
+  display: inline;
+  font-family: Cinzel Decorative;
+}
+.rescheck p{
+  text-shadow: 2px 2px white;
+}

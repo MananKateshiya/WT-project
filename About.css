@@ -19,7 +19,7 @@ body{
   z-index: 1;
   font-size: 80px;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Cinzel Decorative';
   font-weight: 400;
   text-align: center;
   position: absolute;
@@ -42,6 +42,7 @@ body{
   margin-left: 300px;
   position: absolute;
 }
+
 
 .title1{
   color: #b0914f;

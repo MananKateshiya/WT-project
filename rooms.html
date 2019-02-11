@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rooms</title>
+
+	<meta charset="UTF-8">
+
+	<link type="text/css" rel="stylesheet" href="Homepage.css" /> 
+	<link type="text/css" rel="stylesheet" href="reserveroom.css" /> 
+	<script src="Homepage.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous">
+	 </script>
+
+
+</head>
+<body class="room">
+<button onclick="gotop()" id="Btn" title="Go to top"><img src="Images/top.png" style="position: absolute; left: 4px; bottom: 5px; width: 40px;" alt="top"></button>
+
+<div class="hptop">
+	<span style="margin-left: 250px; font-size: 18px;">
+		Panaji, Goa, India - Reservation (+91) 9876543210
+	</span>
+	<button class="btbooknow" style="background: transparent;">
+		BOOK NOW
+	</button>
+</div>
+<header>
+	<a href="#"><img src="Images/Logo.png"></a>
+	<nav id="menu">
+		<ul>
+			<li class="headlinks"><a href="Homepage.html">Home</a></li>
+			<li class="headlinks"><a href="About.html">About</a></li>
+			<li class="headlinks"><a href="rooms.html">Rooms</a></li>
+			<li class="headlinks"><a href="prereservation.html">Reservation</a></li>
+			<li class="headlinks"><a href="Contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>	
+	
+<div class="mainimg" style="background-image: url(Images/roomsmain.jpg); ">
+	<h1>Rooms</h1>
+</div>
+
+<div class="content" style="height: 280px; margin-left: -380px">
+		<center>
+			<br><br><br><br><br><br>
+			<span class="h">Paradise</span><br>
+			<span class="h1">Types of Rooms Available</span><br><br>
+			<hr width="70px" size="3px" color="#b0914f">
+		</center>
+</div>
+
+<div id="roomscheck" style="display: none">
+			<form action="check.php" method="POST">
+			<p>Check-In</p>
+			<input type="date" class="Date" value="2019-01-08" name="checkin">
+			<p>Check-Out</p>
+			<input type="date" class="Date" value="2019-01-10" name="checkout">
+			<p>Adults</p>
+			<select class="hpbooksel">
+				<option value="1">1</option>
+ 				 <option value="2">2</option>
+				 <option value="3">3</option>
+				 <option value="4">4</option>
+				 <option value="5">5</option>
+ 				 <option value="6">6</option>
+				 <option value="7">7</option>
+				 <option value="8">8</option>
+				 <option value="9">9</option>
+ 				 <option value="10">10</option>
+			</select>
+			<p>Children</p>
+			<select class="hpbooksel">
+				<option value="0">0</option>
+				<option value="1">1</option>
+ 				 <option value="2">2</option>
+				 <option value="3">3</option>
+				 <option value="4">4</option>
+				 <option value="5">5</option>
+ 				 <option value="6">6</option>
+				 <option value="7">7</option>
+				 <option value="8">8</option>
+				 <option value="9">9</option>
+ 				 <option value="10">10</option>
+			</select><br><br>
+			<a href="reservation.html">
+			<button class="btbooknow" type="submit" value="Submit" style="margin: 0px; height: 37px; width: 170px;font-family: serif;letter-spacing: 3px;">CHECK AVAILABILITY</button>
+			</a>
+		</form>
+	</div>
+
+
+
+<div class="roomsdiv" style="height: 1010px;">
+			<img src="Images/room1.jpg" class="roomtype">
+			<h1>Preferred King</h1>
+			<br>
+			<span style="display: inline">Starting from</span>
+			<h3 style="display: inline">11900 INR / Night</h3>
+			<br><br>
+			<h4 style="font-size: 20px"> Description </h4>
+			<br>
+			<img src="Images/bed.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Bed:</span>
+			<span style="display: inline">One King Size Bed</span>
+			<br><br>
+			<img src="Images/size.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Size:</span>
+			<span style="display: inline">320 sq. ft</span>
+			<br>
+			<pre style="font-size: 20px;font-family: calibri">
+The views afford a  glimpse of  historic  South End Brownstones, or a  city view along Huntington Avenue. Our Preferred King  room is beautiful
+and spacious, with floor-to-ceiling windows that open. Contemporary furnishings with warm earth tones, exemplify a sophisticated, residential
+design with plush features, designed to allow a comfortable and an unforgettable experience! 
+
+For a great night’s sleep, each room offers: 
+• Maximum Occupancy: 3 guests including children 
+• Smoke Free Environment 
+• Complimentary High Speed wired and wireless Internet access 
+• 40’ HDTV’s and DVD player 
+• I-Pod and mp3 player alarm clocks 
+• Keurig gourmet coffee & tea brewer 
+• Mini-Refrigerator 
+• Two complimentary bottles of spring water 
+• In-room safe
+			</pre>
+
+</div>
+<br><br>
+
+<div class="roomsdiv" style="height: 1010px;">
+			<img src="Images/room2.jpg" class="roomtype">
+			<h1>PREFERRED DOUBLE ROOM</h1>
+			<br>
+			<span style="display: inline">Starting from</span>
+			<h3 style="display: inline">12900 INR / Night</h3>
+			<br><br>
+			<h4 style="font-size: 20px"> Description </h4>
+			<br>
+			<img src="Images/bed.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Bed:</span>
+			<span style="display: inline">Two Double Size Bed</span>
+			<br><br>
+			<img src="Images/size.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Size:</span>
+			<span style="display: inline">320 sq. ft</span>
+			<br>
+			<pre style="font-size: 20px;font-family: calibri">
+The views afford a  glimpse of  historic  South End Brownstones, or a  city view along Huntington Avenue. Our Preferred King  room is beautiful
+and spacious, with floor-to-ceiling windows that open. Contemporary furnishings with warm earth tones, exemplify a sophisticated, residential
+design with plush features, designed to allow a comfortable and an unforgettable experience! 
+
+For a great night’s sleep, each room offers: 
+ Maximum Occupancy: 4 guests including children 
+• Smoke Free Environment 
+• Complimentary High Speed wired and wireless Internet access 
+• 40’ HDTV’s and DVD player 
+• I-Pod and mp3 player alarm clocks 
+• Keurig gourmet coffee & tea brewer 
+• Mini-Refrigerator 
+• Two complimentary bottles of spring water 
+• In-room safe
+			</pre>
+
+</div>
+<br><br>
+
+<div class="roomsdiv" style="height: 1130px;">
+			<img src="Images/room3.jpg" class="roomtype">
+			<h1>LUXE KING</h1>
+			<br>
+			<span style="display: inline">Starting from</span>
+			<h3 style="display: inline">14200 INR / Night</h3>
+			<br><br>
+			<h4 style="font-size: 20px"> Description </h4>
+			<br>
+			<img src="Images/bed.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Bed:</span>
+			<span style="display: inline">One King Size Bed</span>
+			<br><br>
+			<img src="Images/size.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Size:</span>
+			<span style="display: inline">350 sq. ft</span>
+			<br>
+			<pre style="font-size: 20px;font-family: calibri">
+Experience the views of historic South End Brownstones, or a city view along Huntington Avenue. Our Luxe King room is beautiful and spacious
+with floor-to-ceiling windows that open. Need to add a second room? For your convenience, our Luxe King rooms offer a connecting room with
+two double beds. Contemporary furnishings with warm earth tones, exemplify a sophisticated, residential design with plush features, designed
+to allow a comfortable and an unforgettable experience! 
+
+For a great night’s sleep, each room offers: 
+• Maximum Occupancy: 3 guests including children 
+• Smoke Free Environment 
+• Complimentary High Speed wired and wireless Internet access 
+• 40’ HDTV’s and DVD player 
+• I-Pod and mp3 player alarm clocks 
+• Keurig gourmet coffee & tea brewer 
+• Mini-Refrigerator 
+• Two complimentary bottles of spring water 
+• In-room safe 
+• Do Not Disturb Doorbell 
+• Plush pillow top mattresses 
+• Luxurious down comforters and linens 
+• Roll-away Available upon request for rent
+			</pre>
+
+</div>
+<br><br>
+
+<div class="roomsdiv" style="height: 1130px;">
+			<img src="Images/room4.jpg" class="roomtype">
+			<h1>LUXE DOUBLE ROOM</h1>
+			<br>
+			<span style="display: inline">Starting from</span>
+			<h3 style="display: inline">15200 INR / Night</h3>
+			<br><br>
+			<h4 style="font-size: 20px"> Description </h4>
+			<br>
+			<img src="Images/bed.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Bed:</span>
+			<span style="display: inline">Two Double Size Bed</span>
+			<br><br>
+			<img src="Images/size.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Size:</span>
+			<span style="display: inline">350 sq. ft</span>
+			<br>
+			<pre style="font-size: 20px;font-family: calibri">
+The views furnish beautiful sites of historic South End Brownstones, or a city view along Huntington Avenue. Our Luxe Double room is
+beautiful and spacious with floor-to-ceiling windows that open featuring  two double size beds. Need to add a second room? For your
+convenience,  our Luxe Double room offers a  connecting room option. Contemporary furnishings with warm earth tones, exemplify a
+sophisticated, residential design with plush features, designed to allow a comfortable and an unforgettable experience! 
+
+For a great night’s sleep, each room offers: 
+• Maximum Occupancy: 4 guests including children 
+• Smoke Free Environment 
+• Complimentary High Speed wired and wireless Internet access 
+• 40’ HDTV’s and DVD player 
+• I-Pod and mp3 player alarm clocks 
+• Keurig gourmet coffee & tea brewer 
+• Mini-Refrigerator 
+• Two complimentary bottles of spring water 
+• In-room safe 
+• Do Not Disturb Doorbell 
+• Plush pillow top mattresses 
+• Luxurious down comforters and linens 
+• Roll-away Available upon request for rent
+			</pre>
+
+</div>
+<br><br>
+
+<div class="roomsdiv" style="height: 1230px;">
+			<img src="Images/room4.jpg" class="roomtype">
+			<h1>PREMIER LUXE KING</h1>
+			<br>
+			<span style="display: inline">Starting from</span>
+			<h3 style="display: inline">17000 INR / Night</h3>
+			<br><br>
+			<h4 style="font-size: 20px"> Description </h4>
+			<br>
+			<img src="Images/bed.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Bed:</span>
+			<span style="display: inline">One King Size Bed</span>
+			<br><br>
+			<img src="Images/size.png" style="display: inline; width: 24px; height: 15px">
+			<span style="color: black">Size:</span>
+			<span style="display: inline">370 sq. ft</span>
+			<br>
+			<pre style="font-size: 20px;font-family: calibri">
+A beautiful  and unobstructed view of the  city skyline from our  Premier Luxe King  perfectly located on a  higher floor with floor-to-ceiling
+windows that open; another great way to enjoy the city view. Contemporary furnishings, with warm earth tones, exemplify a sophisticated,
+residential design. Our room features display a warm and inviting ambience and exceptional amenities for your comfort. 
+
+For a great night’s sleep, each room offers: 
+• Maximum Occupancy: 3 guests including children 
+• Smoke Free Environment 
+• Complimentary High Speed wired and wireless Internet access 
+• 40’ HDTV’s and DVD player 
+• I-Pod and mp3 player alarm clocks 
+• Keurig gourmet coffee & tea brewer 
+• Mini-Refrigerator 
+• Two complimentary bottles of spring water 
+• In-room safe 
+• Do Not Disturb Doorbell 
+• Plush pillow top mattresses 
+• Luxurious down comforters and linens 
+• Roll-away Available upon request for rent 
+• Plush bathrobes 
+• Thymes eucalyptus bath products 
+• Full-size hair dryer 
+• Shaving mirror 
+• Two line cordless and hands free telephone
+			</pre>
+
+</div>
+
+
+
+	
+	<div class="footer">
+		
+		
+			<img src="Images/footlogo.png" alt="footlogo" class="footlogo">
+			<div class="footheading">
+			<span>Company</span>
+			<span>Services</span>
+			<span>Sign up for newletter</span>
+			</div>	
+			
+			<div>
+				<img class="icons" src="Images/mobile2.png" alt="mobile">
+				<img class="icons2" src="Images/mail.png" alt="mobile">
+				<img class="icons3" src="Images/location.png" alt="mobile">
+			</div>
+			<div class="contact">
+			<p>(+91) 9876543210</p>
+			<p>contact@paradise.com</p>
+			<p>Kalawad Rd, Rajkot, Gujarat, India.</p>
+			</div>
+
+			<div class="footlinks1">
+				<p><a href="#">> Home</a></p>
+				<p><a href="#">> About us</a></p>
+				<p><a href="#">> Blog</a></p>
+				<p><a href="#">> Contact</a></p>
+			</div>
+
+			<div class="footlinks2">
+				<p><a href="#">> Spa</a></p>
+				<p><a href="#">> Rooms</a></p>
+				<p><a href="#">> Restaurant</a></p>
+				<p><a href="#">> Gym</a></p>
+				
+			</div>
+			
+			
+				<div class="out-ho">
+					<div class="in-ho">
+					<a href="https://www.facebook.com/" target="blank"><img class="fb" src="Images/facebook2.png" alt="fb"></a></div>
+				<div class="in-ho"><a href="https://www.instagram.com/" target="blank"><img class="insta" src="Images/instagram2.png" alt="insta"></a></div>
+				<div class="in-ho"><a href="https://www.twitter.com/" target="blank"><img class="twitter" src="Images/twitter.png" alt="twitter"></a></div>
+			</div>
+
+
+			<div class="signup">
+				<input class="mail" type="mail" placeholder="Your Email...">
+				<input class="button" type="button" value="">
+			</div>
+
+	<div class="trip">
+		<a href="https://www.tripadvisor.in/" target="blank"><img src="Images/tripadvisor.png" alt="tripadvisor"></a>
+	</div>
+
+<hr width="80%" style="border: 0.7px solid rgba(202,202,202,0.1); margin-top: 500px; margin-left: 200px; position: absolute; ">
+
+<div class="copy">
+	<p>&copy; Copyright 2019-20. All rights reserved.</p>
+</div>
+
+<div class="lastlinks">
+		<a href="#">Terms & Conditions</a>    |
+		<a href="#">Privacy Policy</a>    |
+		<a href="#">Site Map</a>
+	</div>
+
+</div>	
+
+</body>
+</html>

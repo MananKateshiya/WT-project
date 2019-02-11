@@ -21,29 +21,29 @@ body{
 header img{
   height: 90px;
   width: 270px;
-	margin-left: 280px;
+  margin-left: 280px;
   margin-top: 20px;
-	position: absolute;
+  position: absolute;
 }
 #menu{
-	position: absolute;
-	height: 133px;
-	width: 730px;
-	margin-top: 0px;
-	margin-left: 700px;
+  position: absolute;
+  height: 133px;
+  width: 730px;
+  margin-top: 0px;
+  margin-left: 700px;
 }
 .headlinks{
   margin-left: 15px;
 }
 li{
-	list-style-type: none;
+  list-style-type: none;
     display: inline-block;
     line-height: 70px;
     padding: 0px 5px;
     margin-top: 20px;
 }
 li a{
-	font-family: "Cinzel Decorative";
+  font-family: "Cinzel Decorative";
     font-size: 20px;
     font-weight: 1000;
     text-align: right;
@@ -52,7 +52,7 @@ li a{
     padding: 40px 10px;
 }
 nav a:hover {
-	background: transparent;
+  background: transparent;
     color: #b0914f;
     border-color: #b0914f;
 }
@@ -592,4 +592,125 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .hpbooksel::-webkit-calendar-picker-indicator {
     color: #b0914f;
+}
+
+
+
+/*--------------------------------------Rooms---------------------------------------*/
+
+.mainimg{
+  height: 400px;
+  width: 100%;
+}
+.mainimg h1{
+  padding-top: 180px;
+  font-family: Cinzel Decorative;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  letter-spacing: 20px;
+}
+.roomsdiv{
+  width: 60%;
+  margin-left: 20%;
+  padding-left: 220px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.roomtype{
+  width: 700px;
+  height: 309px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 2px #b0914f;
+}
+.roomtype:hover{
+  transition: 1s;
+  box-shadow: 0px 1px 1px 4px orange;
+  transform: scale(1.01);
+  border-radius: 1px;
+}
+.roomtype:not(:hover){
+  transition: 1s;
+  box-shadow: 0px 1px 1px 2px #b0914f;
+  transform: scale(1.0);
+}
+.roomsdiv h1{
+  font-family: Cinzel Decorative;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 12px;
+  position: relative;
+}
+.roomsdiv span{
+  top: 1260px;
+  left: 1060px;
+  color: #b59292;
+}
+.roomsdiv h3{
+  font-family: verdana;
+  font-size: 22px;
+  color: #b0914f;
+}
+
+
+
+/*--------------------------------------Reservation---------------------------------------*/
+
+.resmain{
+  background-color: #b0914f;
+  color: white;
+  font-family: Cinzel Decorative;
+  height: 820px;
+  width: 50%;
+  margin-left: 22%;
+  font-size: 25px;
+  padding: 40px;
+}
+.resmain form{
+  padding-left: 200px;
+}
+.resmain form tr td {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.resmain form tr td span:hover{
+  transform: 1s;
+  color: black;
+}
+.resmain form tr td input[type="date"]:hover{
+  transition: 0.2s;
+  border-left: 5px solid #b0914f;
+  box-shadow: 0px 1px 3px black;
+}
+.resmain form tr td input[type="text"]:hover{
+  transition: 0.2s;
+  border-left: 5px solid #b0914f;
+  box-shadow: 0px 1px 3px black;
+}
+.resmain form tr td select:hover{
+  transition: 0.2s;
+  border-left: 5px solid #b0914f;
+  box-shadow: 0px 1px 3px black;
+}
+.resmain center a{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+   letter-spacing: 10px;
+   text-decoration: none;
+}
+.resmain center a:hover{
+  transition: 0.7s;
+  color: white;
+  font-weight: bold;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: scale(1.1);
+}
+.resmain h3:hover{
+  color: black;
+  transition: 0.2s;
+  transform: scale(1.1);
 }
