@@ -169,3 +169,16 @@
 .rescheck p{
   text-shadow: 2px 2px white;
 }
+
+#submit{
+  border: 3px solid black;
+  border-left: none;
+  border-right: none;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+#submit:hover{
+  border: 3px solid white;
+  border-left: none;
+  border-right: none;
+}

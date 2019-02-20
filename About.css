@@ -12,7 +12,8 @@ body{
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
-  filter: brightness(0.5);
+  filter: brightness(0.7);
+  
 }
 
 .about-text{
