@@ -1,0 +1,94 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-image: url(Images/Spa/background1.jpg); 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.backg{
+  height: 400px;
+  width: 1900px; 
+  background-image: url(Images/Res/res.jpg);
+}
+.backg h1{
+  padding-top: 180px;
+  font-family: Cinzel Decorative;
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  letter-spacing: 10px;
+}
+.bgtext{
+  margin-top: 200px;
+  height: 745px;
+}
+#spc{
+    font-family: "Cinzel Decorative";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+}
+#fr{
+   font-family: verdana;
+    font-size: 75px;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+}
+.main{
+  background-color: white;
+  width: 100%;
+  height: 1700px;
+}
+.spa{
+  height: 400px;
+  width: 500px;
+  margin-top: 70px;
+  margin-left: 400px;
+  position: absolute;
+}
+.rr{
+  font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    text-align: left;
+    color: #b0914f;
+    margin: 0px;
+}
+.hs{
+  font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    color: #333333;
+    margin-top: 11px;
+    margin-bottom: 25px;
+}
+.ph{
+  font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
+    color: #7b7b7b;
+    margin: 0px;
+  text-align: justify;
+  width: 600px;
+}
+.spa1{
+  height: 400px;
+  width: 500px;
+  margin-top: 70px;
+  margin-left: 1000px;
+  position: absolute;
+}
+.footer{
+  width: 100%;
+  height: 600px;
+  background-color: rgb(51, 51, 51);
+}

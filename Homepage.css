@@ -224,6 +224,7 @@ option{
 /*------------------------------------------------------------*/
 
 .container button{
+  outline: none;
   display: inline-block;
   position: relative;
   float: left;
