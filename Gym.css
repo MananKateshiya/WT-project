@@ -1,0 +1,85 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 125%;
+}
+.backg{
+	height: 400px;
+	width: 1900px; 
+	background-image: url(Images/Gym/background.jpg);
+}
+.backg h1{
+  padding-top: 180px;
+  font-family: Cinzel Decorative;
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  letter-spacing: 10px;
+}
+.dt{
+  float: left;
+  width: 50%;
+  height: 70px;
+  background-color: white;
+}
+.da{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-left: 700px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+    color: #333333;
+}
+.ti{
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    margin-left: 719px;
+    font-weight: bold;
+    line-height: 2.14;
+    text-align: center;
+    color: #7b7b7b;
+}
+.dt1{
+  width: 50%;
+  height: 70px;
+  background-color: white;
+  float: right;
+}
+.da1{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-left: 100px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+    color: #333333;
+}
+.ti1{
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    margin-left: 109px;
+    font-weight: bold;
+    line-height: 2.14;
+    text-align: center;
+    color: #7b7b7b;
+}
+.bgtext{
+  height: 750px;
+}
+#spc{
+    font-family: "Cinzel Decorative";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    color: #ffffff;
+}
+.fr{
+   font-family: verdana;
+    font-size: 75px;
+    line-height: 1.67;
+    color: #ffffff;
+}

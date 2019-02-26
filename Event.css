@@ -1,0 +1,26 @@
+body{
+	  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#im{
+	background-image: url(Images/Event/background.jpg);
+    height: 393px;
+    width: 100%;
+}
+.ev{
+	font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.m{
+	font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    width: 700px;
+    line-height: 2.14;
+    color: #7b7b7b;
+}

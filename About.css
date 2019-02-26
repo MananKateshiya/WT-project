@@ -12,12 +12,12 @@ body{
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
-  filter: brightness(0.7);
+  
   
 }
 
 .about-text{
-  z-index: 1;
+  
   font-size: 80px;
   color: white;
   font-family: 'Cinzel Decorative';
