@@ -3,9 +3,10 @@
 <head>
 
 	<meta charset="UTF-8">
-
+	<link rel="icon" href="IMages/title1.png">
 	<title>Reservation/Confirmation</title>
 	<link type="text/css" rel="stylesheet" href="Homepage.css" /> 
+	<link rel="stylesheet" type="text/css" href="reserveroom.css">
 	<script src="Homepage.js"></script>
 	<script>
 	  src="https://code.jquery.com/jquery-3.3.1.js"
@@ -16,9 +17,6 @@
 
 </head>
 <body>
-
-
-
 
 
 
@@ -75,6 +73,7 @@ else{
 	$rp=17200;
 }
 $c=0;
+
 if($children>=(2*$adults)){
 	$adults=$adults/3;
 	$a=round($adults);
@@ -97,13 +96,10 @@ while($checkin<=$checkout){
 	$costfinal=$costfinal+$cost;
 	$checkin++;
 }
+
 $costtax = $costfinal + ($costfinal*0.1);
 
 ?>
-
-
-
-
 
 
 
@@ -140,7 +136,7 @@ $costtax = $costfinal + ($costfinal*0.1);
 
 
 <div class="mainimg" style="background-image: url(Images/reservationmain.jpg);">
-	<h1>Reservation</h1>
+	<h1 >Reservation</h1>
 </div>
 
 <br><br><br><br><br>
@@ -246,20 +242,16 @@ $costtax = $costfinal + ($costfinal*0.1);
 			</div>
 
 			<div class="footlinks1">
-				<p><a href="#">> Home</a></p>
-				<p><a href="#">> About us</a></p>
-				<p><a href="#">> Blog</a></p>
-				<p><a href="#">> Contact</a></p>
+				<p><a href="Homepage.html">> Home</a></p>
+				<p><a href="About.html">> About us</a></p>
+				<p><a href="Contact.html">> Contact</a></p>
 			</div>
-
 			<div class="footlinks2">
-				<p><a href="#">> Spa</a></p>
-				<p><a href="#">> Rooms</a></p>
-				<p><a href="#">> Restaurant</a></p>
-				<p><a href="#">> Gym</a></p>
-				
+				<p><a href="spa.html">> Spa</a></p>
+				<p><a href="event.html">> Event</a></p>
+				<p><a href="restaurant.html">> Restaurant</a></p>
+				<p><a href="gym.html">> Gym</a></p>
 			</div>
-			
 			
 				<div class="out-ho">
 					<div class="in-ho">

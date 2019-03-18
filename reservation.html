@@ -24,9 +24,9 @@
 	<span style="margin-left: 250px; font-size: 18px;">
 		Miramar, Panaji, Goa 403001 - Reservation (+91) 9876543210
 	</span>
-	<button class="btbooknow" style="background: transparent;">
+	<a href="prereservation.html"><button class="btbooknow" style="background: transparent;">
 		BOOK NOW
-	</button>
+	</button></a>
 </div>
 <header>
 	<a href="#"><img src="Images/Logo.png"></a>
@@ -69,9 +69,9 @@
 
 <div class="rescheck" style="z-index: 0;position: absolute;left: 300px;top: 1160px; transform: scale(1.3);">
 			<p>Check-In</p>
-			<input type="date" class="Date" value="2019-01-08">
+			<input type="date" class="Date" value="2019-02-27">
 			<p>Check-Out</p>
-			<input type="date" class="Date" value="2019-01-10">
+			<input type="date" class="Date" value="2019-02-27">
 			<p>Adults</p>
 			<select class="hpbooksel">
 				<option value="1">1</option>
@@ -120,21 +120,21 @@
 	
 		<h3 style="text-align: center; letter-spacing: 5px">Your Reservation</h3>
 			<hr width="50%" style="color: white" align="center"><br>
-	<form action="insertdata.php" method="POST">
+	<form action="insertdata.php" method="POST" onsubmit="return formvalidation()">
 		<table>
 			<tr>
 				<td><span>Check-In</span></td>
-				<td><input type="date" class="Date" value="2019-01-08" style="width: 285px;height: 40px" name="checkin" ></td>
+				<td><input type="date" class="Date" value="2019-02-27" style="width: 285px;height: 40px" name="checkin" id="cin"></td>
 			</tr>
 			<tr>
 				<td><span>Check-Out</span></td>
-				<td><input type="date" class="Date" value="2019-01-08" style="width: 285px;height: 40px" name="checkout"></td>
+				<td><input type="date" class="Date" value="2019-02-27" style="width: 285px;height: 40px" name="checkout" id="cout"></td>
 			</tr>
 			<tr>
 				<td><span>Room-Type </span><a href="rooms.html" style="color: white"> ?</a></td>
 				<td>
 					<select class="hpbooksel" style="width: 290px;height: 40px" name="roomtype">
-					<option value="PreferredKing">Preferred King</option>
+					<option value="PreferredKing" selected>Preferred King</option>
 	 				 <option value="PreferredDoubleRoom">Preferred Double Room</option>
 					 <option value="LuxeKing">Luxe King</option>
 					 <option value="LuxeDoubleRoom">Luxe Double Room</option>
@@ -146,7 +146,7 @@
 				<td><span>Adults</span></td>
 				<td>
 					<select class="hpbooksel" style="width: 290px;height: 40px" name="adults">
-					<option value="1">1</option>
+					<option value="1" selected>1</option>
 	 				 <option value="2">2</option>
 					 <option value="3">3</option>
 					 <option value="4">4</option>
@@ -179,23 +179,60 @@
 			</tr>
 			<tr>
 				<td><span>Name</span></td>
-				<td><input type="text" name="name" style="width: 287px;height: 35px;font-size: 25px"></td>
+				<td><input type="text" name="name" style="width: 287px;height: 35px;font-size: 25px" id="na"></td>
 			</tr>
 			<tr>
 				<td><span>Email</span></td>
-				<td><input type="email" name="email" style="width: 287px;height: 35px;font-size: 25px"></td>
+				<td><input type="email" name="email" style="width: 287px;height: 35px;font-size: 25px" id="em"></td>
 			</tr>
 			<tr>
 				<td><span>Phone</span></td>
-				<td><input type="phone" name="phone" style="width: 287px;height: 35px;font-size: 25px"></td>
+				<td><input type="phone" name="phone" style="width: 287px;height: 35px;font-size: 25px" id="ph"></td>
 			</tr>
 		</table>
-	<br>
+	<span id="error" style="color : red; font-family: sans-serif; margin-left : 50px;"></span><br><br>
 	<center>
-		<button type="submit" value="Submit" id="submit">Submit	<h5 style="display: inline; ">&#x2714</h5></button>
+		
+		<button type="submit" value="Submit" id="submit">Submit	<h5 style="display: inline;">&#x2714</h5></button>
 	</center>
 	</form>
 </div>	
+
+<script>
+	
+
+
+	function formvalidation(){
+		var uname = document.getElementById('na').value;
+		var email = document.getElementById('em').value;
+		var mnumber = document.getElementById('ph').value;
+		var cin = document.getElementById('cin').value;
+		var cout = document.getElementById('cout').value;
+		var z = "2019-02-27";
+		
+
+
+		if ( cin >= cout || cin <= z){
+			document.getElementById('error').innerHTML = "**Enter valid date**";
+			return false;
+		}
+		if ( (uname=="") || (!isNaN(uname)) || ((uname.length)<=2)){
+			document.getElementById('error').innerHTML = "**Enter valid username**";
+			return false;
+		}
+		if(email.length<6 || (email.indexOf('.')!=email.length-3 && email.indexOf('.')!=email.length-4)){
+			document.getElementById('error').innerHTML = "**Enter valid email**";
+			return false;
+		}
+		if(mnumber.length!=10 ){
+			document.getElementById('error').innerHTML = "**Mobile number must be of 10 digits**";
+			return false;
+		}
+	}
+
+</script>
+
+
 <br><br>
 
 

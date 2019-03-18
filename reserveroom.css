@@ -171,6 +171,7 @@
 }
 
 #submit{
+  outline: none;
   border: 3px solid black;
   border-left: none;
   border-right: none;

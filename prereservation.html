@@ -24,9 +24,9 @@
 	<span style="margin-left: 250px; font-size: 18px;">
 		Miramar, Panaji, Goa 403001 - Reservation (+91) 9876543210
 	</span>
-	<button class="btbooknow" style="background: transparent;">
+	<a href="prereservation.html"><button class="btbooknow" style="background: transparent;">
 		BOOK NOW
-	</button>
+	</button></a>
 </div>
 <header>
 	<a href="#"><img src="Images/Logo.png"></a>
@@ -70,9 +70,9 @@
 <div class="rescheck" style="z-index: 0;position: absolute;left: 300px;top: 1160px; transform: scale(1.3);">
 		<form action="check.php" method="POST">
 			<p>Check-In</p>
-			<input type="date" class="Date" value="2019-01-08" name="checkin">
+			<input  type="date" class="Date" value="2019-02-27" name="checkin">
 			<p>Check-Out</p>
-			<input type="date" class="Date" value="2019-01-10" name="checkout">
+			<input  type="date" class="Date" value="2019-02-27" name="checkout">
 			<p>Adults</p>
 			<select class="hpbooksel">
 				<option value="1">1</option>
@@ -123,13 +123,16 @@
 			<hr width="50%" style="color: white" align="center"><br>
 	<form>
 		<table>
+			<form action="#" onsubmit="return formvalidation()">
 			<tr>
 				<td><span>Check-In</span></td>
-				<td><input type="date" name="checkin" class="Date" value="2019-01-08" style="width: 285px;height: 40px" name="checkin" readonly></td>
+				<td><input type="date" name="checkin" class="Date" value="2019-02-27" style="width: 285px;height: 40px" name="checkin" readonly></td>
 			</tr>
 			<tr>
 				<td><span>Check-Out</span></td>
-				<td><input type="date" class="Date" name="checkout" value="2019-01-08" style="width: 285px;height: 40px" name="checkout" readonly></td>
+				<td><input type="date" class="Date" name="checkout" value="2019-02-27" style="width: 285px;height: 40px" name="checkout" readonly></td>
+				<span id="error" style="color:red; font-size: 16px;"></span>
+				</form>
 			</tr>
 			<tr>
 				<td><span>Room-Type </span><a href="rooms.html" style="color: white"> ?</a></td>
@@ -264,6 +267,27 @@
 	</div>
 
 </div>	
+
+
+<script>
+	
+	function formvalidation(){
+		var uname = document.getElementById('na').value;
+		var email = document.getElementById('em').value;
+		var mnumber = document.getElementById('ph').value;
+		var cin = document.getElementById('cin').value;
+		var cout = document.getElementById('cout').value;
+		var z = "2019-02-27";
+		
+
+
+		if ( cin >= cout || cin <= z){
+			document.getElementById('error').innerHTML = "**Enter valid date**";
+			return false;
+		}
+
+</script>
+
 
 </body>
 </html>
