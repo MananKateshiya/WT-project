@@ -13,10 +13,11 @@
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	  crossorigin="anonymous">
 	 </script>
+	 <script src="currentdate.js"></script>
 
 
 </head>
-<body class="room">
+<body class="room" onload="date()">
 <button onclick="gotop()" id="Btn" title="Go to top"><img src="Images/top.png" style="position: absolute; left: 4px; bottom: 5px; width: 40px;" alt="top"></button>
 
 <div class="hptop">
@@ -56,9 +57,9 @@
 <div id="roomscheck" style="display: none">
 			<form action="check.php" method="POST">
 			<p>Check-In</p>
-			<input type="date" class="Date" value="2019-02-27" name="checkin">
+			<input type="date" id="t" class="Date" name="checkin">
 			<p>Check-Out</p>
-			<input type="date" class="Date" value="2019-02-27" name="checkout">
+			<input type="date" id="t2" class="Date"  name="checkout">
 			<p>Adults</p>
 			<select class="hpbooksel">
 				<option value="1">1</option>

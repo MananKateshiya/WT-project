@@ -1,0 +1,44 @@
+<html>
+<head>
+<script type="text/javascript">
+function fdate(){
+// var d = new Date();
+// 		var mm = d.getMonth()+1;
+// 		var dd = d.getDate();
+// 		var yy = d.getFullYear();
+// 		var z = yy + "-" +"0"+ mm + "-" + dd;
+// 		document.getElementById('t').value = z;
+
+// 		if(z > "2019-03-08"){
+// 			document.write("BIGGER");
+// 		}
+
+// }
+		 var dt = new Date();
+		 var m;
+		 var d;
+		 var y;
+
+		 if(dt.getMonth() < 9){
+		  m = "0" + (dt.getMonth()+1);
+		 }else {
+		 m =  (dt.getMonth()+1);
+		 }
+
+		 if(dt.getDate() < 10){
+		  d = "0" + dt.getDate();
+		 }else {
+		  d =  dt.getDate();
+		 }
+		 y = dt.getFullYear();
+
+		 var z = (y + "-" + m + "-" + d);
+		 console.log(z);
+
+</script>
+</head>
+<body onload="fdate()">
+	<input type="date" id="t">
+	
+</body>
+</html>

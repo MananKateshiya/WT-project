@@ -17,7 +17,7 @@ $conn = new mysqli($servername, $username, $password, $db);
 
 $qur = "INSERT INTO `contact`( `Name`, `Email`, `Subject`, `Message`) VALUES ( '$n', '$m', '$s', '$msg')";
 mysqli_query($conn, $qur);
-
+echo "<script>location.href='Contact.html'</script>";
 
 
 ?>

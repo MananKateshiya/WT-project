@@ -6,8 +6,9 @@
 		<link type="text/css" rel="stylesheet" href="Homepage.css" />
 		<link type="text/css" rel="stylesheet" href="reserveroom.css" />
 		<script src="Homepage.js"></script>
+		<script src="currentdate.js"></script>
 	</head>
-	<body>
+	<body onload="date()">
 		<button onclick="gotop()" id="Btn" title="Go to top"><img src="Images/top.png" style="position: absolute; left: 4px; bottom: 5px; width: 40px;" alt="top"></button>
 		<div class="hptop">
 			<span style="margin-left: 250px; font-size: 18px;">
@@ -36,11 +37,11 @@
 		<div class="hpbook">
 			<div>
 				<p>Check-In</p>
-				<input type="date" class="Date" value="2019-02-27">
+				<input type="date" id="t" class="Date">
 			</div>
 			<div style="margin-left: 20px">
 				<p>Check-Out</p>
-				<input type="date" class="Date" value="2019-02-27">
+				<input type="date" id="t2" class="Date">
 			</div>
 			<div style="margin-left: 20px;">
 				<p>Adults</p>
@@ -75,7 +76,7 @@
 			</div>
 			<div style="margin-left: 20px;padding: 0 0 0 0px">
 				<a href="#">
-					<button class="btcheck">Check Availability</button>
+					<input type="submit" class="btcheck" onclick="che()">Check Availability
 				</a>
 			</div>
 		</div>
@@ -164,5 +165,37 @@
 					<a href="#">Site Map</a>
 				</div>
 			</div>
+			<script>
+				function che(){
+					
+				var cin = documnent.getElementById('t').value;
+				var cout = documnent.getElementById('t2').value;
+		 var dt = new Date();
+		 var m;
+		 var d;
+		 var y;
+
+		 if(dt.getMonth() < 9){
+		  m = "0" + (dt.getMonth()+1);
+		 }else {
+		 m =  (dt.getMonth()+1);
+		 }
+
+		 if(dt.getDate() < 10){
+		  d = "0" + dt.getDate();
+		 }else {
+		  d =  dt.getDate();
+		 }
+		 y = dt.getFullYear();
+
+		 var z = (y + "-" + m + "-" + d);
+		 console.log(z);
+		 if(cin > cout || cin < z){
+		 	window.location="Contact.html"
+		}
+
+}
+
+			</script>
 		</body>
 	</html>

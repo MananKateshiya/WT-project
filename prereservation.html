@@ -8,16 +8,17 @@
 	<link rel="icon" href="IMages/title1.png">
 	<link type="text/css" rel="stylesheet" href="Homepage.css" /> 
 	<link type="text/css" rel="stylesheet" href="reserveroom.css" /> 
+	<script src="currentdate.js"></script>
 	<script src="Homepage.js"></script>
 	<script>
 	  src="https://code.jquery.com/jquery-3.3.1.js"
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	  crossorigin="anonymous">
 	</script>
-
+ 	<script src="currentdate.js"></script>
 
 </head>
-<body>
+<body onload="date()">
 <button onclick="gotop()" id="Btn" title="Go to top"><img src="Images/top.png" style="position: absolute; left: 4px; bottom: 5px; width: 40px;" alt="top"></button>
 
 <div class="hptop">
@@ -70,9 +71,9 @@
 <div class="rescheck" style="z-index: 0;position: absolute;left: 300px;top: 1160px; transform: scale(1.3);">
 		<form action="check.php" method="POST">
 			<p>Check-In</p>
-			<input  type="date" class="Date" value="2019-02-27" name="checkin">
+			<input  type="date" id="t" class="Date"  name="checkin">
 			<p>Check-Out</p>
-			<input  type="date" class="Date" value="2019-02-27" name="checkout">
+			<input  type="date" id="t2" class="Date" name="checkout">
 			<p>Adults</p>
 			<select class="hpbooksel">
 				<option value="1">1</option>
@@ -126,11 +127,11 @@
 			<form action="#" onsubmit="return formvalidation()">
 			<tr>
 				<td><span>Check-In</span></td>
-				<td><input type="date" name="checkin" class="Date" value="2019-02-27" style="width: 285px;height: 40px" name="checkin" readonly></td>
+				<td><input type="date" name="checkin" class="Date" id="t3" style="width: 285px;height: 40px" name="checkin" readonly></td>
 			</tr>
 			<tr>
 				<td><span>Check-Out</span></td>
-				<td><input type="date" class="Date" name="checkout" value="2019-02-27" style="width: 285px;height: 40px" name="checkout" readonly></td>
+				<td><input type="date" class="Date" id="t4" name="checkout" style="width: 285px;height: 40px" name="checkout" readonly></td>
 				<span id="error" style="color:red; font-size: 16px;"></span>
 				</form>
 			</tr>
@@ -277,8 +278,27 @@
 		var mnumber = document.getElementById('ph').value;
 		var cin = document.getElementById('cin').value;
 		var cout = document.getElementById('cout').value;
-		var z = "2019-02-27";
-		
+
+		var dt = new Date();
+		var m;
+		var d;
+		var y;
+
+		if(dt.getMonth() < 9){
+		 m = "0" + (dt.getMonth()+1);
+		}else {
+		m =  (dt.getMonth()+1);
+		}
+
+		if(dt.getDate() < 10){
+		 d = "0" + dt.getDate();
+		}else {
+		 d =  dt.getDate();
+		}
+
+		 y = dt.getFullYear();
+
+		var z = (y + "-" + m + "-" + d);
 
 
 		if ( cin >= cout || cin <= z){
